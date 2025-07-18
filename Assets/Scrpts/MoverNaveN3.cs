@@ -54,7 +54,7 @@ public class MoverNaveN3 : MonoBehaviour
 
         if (direccion != Vector3.zero)
         {
-            rigidbody.velocity = direccion.normalized * velocidad; // Mover en la dirección calculada
+            rigidbody.linearVelocity = direccion.normalized * velocidad; // Mover en la dirección calculada
             if (!isMoving)
             {
                 PlayPropulsionSound(true);
@@ -62,7 +62,7 @@ public class MoverNaveN3 : MonoBehaviour
         }
         else
         {
-            rigidbody.velocity = Vector3.zero;
+            rigidbody.linearVelocity = Vector3.zero;
             rigidbody.angularVelocity = Vector3.zero;
             if (isMoving)
             {

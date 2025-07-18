@@ -5,7 +5,7 @@ using UnityEngine;
 public class DispararNave : MonoBehaviour
 {
     public GameObject proyectilPrefab; // Prefab del proyectil
-    public Transform puntoDisparo; // Punto desde donde se disparará el proyectil
+    public Transform puntoDisparo; // Punto desde donde se dispararï¿½ el proyectil
     public float velocidadProyectil = 20f; // Velocidad del proyectil
 
     // Start is called before the first frame update
@@ -25,14 +25,14 @@ public class DispararNave : MonoBehaviour
 
     void Disparar()
     {
-        // Instancia el proyectil en la posición y rotación del punto de disparo
+        // Instancia el proyectil en la posiciï¿½n y rotaciï¿½n del punto de disparo
         GameObject proyectil = Instantiate(proyectilPrefab, puntoDisparo.position, puntoDisparo.rotation);
 
-        // Añade velocidad al proyectil
+        // Aï¿½ade velocidad al proyectil
         Rigidbody rb = proyectil.GetComponent<Rigidbody>();
-        rb.velocity = puntoDisparo.forward * velocidadProyectil;
+        rb.linearVelocity = puntoDisparo.forward * velocidadProyectil;
 
-        // Destruye el proyectil después de 2 segundos para evitar sobrecarga de la escena
+        // Destruye el proyectil despuï¿½s de 2 segundos para evitar sobrecarga de la escena
         Destroy(proyectil, 2f);
     }
 }
