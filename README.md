@@ -17,11 +17,6 @@
 
 ℹ️ Cada planeta muestra una pequeña descripción junto a su modelo en pantalla.
 
----
-
-## 📷 Vista previa de la app
-
-![Planetas en AR](https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif)
 
 ---
 
