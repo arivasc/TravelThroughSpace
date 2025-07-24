@@ -15,7 +15,7 @@ public class GeneradorDeAsteroides : MonoBehaviour
         for (int i = 0; i < cantidadAsteroides; i++)
         {
             // Posición entre nave y Marte + aleatoriedad
-            float t = Random.Range(0.2f, 0.9f); // no tan cerca de nave ni de Marte
+            float t = Random.Range(0.3f, 0.6f); // no tan cerca de nave ni de Marte
             Vector3 basePos = nave.position + direccion * t;
             Vector3 posicion = basePos + new Vector3(
                 Random.Range(-dispersión.x, dispersión.x),

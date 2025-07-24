@@ -5,8 +5,9 @@ public class VidaJugador : MonoBehaviour
 {
     public int vidaMaxima = 100;
     public int vidaActual = 100;
-
     public Slider barraDeVida;
+
+    public GameObject canvasGameOver; // <- NUEVO
 
     void Start()
     {
@@ -16,6 +17,9 @@ public class VidaJugador : MonoBehaviour
             barraDeVida.maxValue = vidaMaxima;
             barraDeVida.value = vidaActual;
         }
+
+        if (canvasGameOver != null)
+            canvasGameOver.SetActive(false); // Asegúrate de ocultarlo al inicio
     }
 
     public void RecibirDamage(int cantidad)
@@ -31,7 +35,10 @@ public class VidaJugador : MonoBehaviour
         if (vidaActual <= 0)
         {
             Debug.Log("¡Nave destruida!");
-            // Aquí podrías mostrar Game Over o reiniciar nivel
+            if (canvasGameOver != null)
+                canvasGameOver.SetActive(true);
+            Time.timeScale = 0; // Pausa el juego al morir
+            // Puedes añadir aquí Time.timeScale = 0 si quieres pausar el juego
         }
     }
 }

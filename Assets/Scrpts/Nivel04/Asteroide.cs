@@ -3,25 +3,25 @@ using UnityEngine;
 public class Asteroide : MonoBehaviour
 {
     public float velocidadLateral = 0.5f;
-    public int damage = 20;
+    public int daño = 10;
 
     void Update()
     {
-        // Movimiento lateral constante
+        // Movimiento lateral constante (opcional)
         transform.position += Vector3.left * velocidadLateral * Time.deltaTime;
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("tierra2.0"))
+        if (collision.gameObject.CompareTag("tierra2.0"))
         {
-            VidaJugador vida = other.GetComponent<VidaJugador>();
+            VidaJugador vida = collision.gameObject.GetComponent<VidaJugador>();
             if (vida != null)
             {
-                vida.RecibirDamage(damage);
+                vida.RecibirDamage(daño);
             }
 
-            // Destruye el asteroide tras chocar (opcional)
+            // Destruir asteroide tras impacto (opcional)
             Destroy(gameObject);
         }
     }
