@@ -1,6 +1,6 @@
 # 🌍 App de Realidad Aumentada: Explorando el Sistema Solar
 
-![Demo](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
+[![Demo](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm54b2hwNGpudDl4eDIzdTZ1NnA4dW5rZ2RpZDU1bjEyNWQzNWpyOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9hXCabBkhTmO98HBvq/giphy.gif)
 
 > Una aplicación educativa en Realidad Aumentada (AR) donde, al escanear una imagen, se muestran en la pantalla **Mercurio, Venus y la Tierra** con sus respectivas descripciones.
 
