@@ -30,15 +30,6 @@ Este juego combina aventura, exploración y elementos de acción ligera en un en
 
 Se aplicó el modelo de **prototipado rápido iterativo**, permitiendo realizar pruebas frecuentes con usuarios y ajustes continuos en diseño, jugabilidad y contenido educativo.
 
-## 📂 Estructura del Repositorio
-
-```plaintext
-├── Assets/               # Recursos del juego (sprites, scripts, escenas)
-├── Docs/                 # Documentos complementarios (storyboard, prototipos)
-├── Builds/               # Ejecutables del juego
-├── README.md             # Este archivo
-├── referencias.bib       # Referencias académicas en BibTeX
-└── Annexes/              # Anexos y documentación adicional
 ## 🤝 Trabajo en Equipo
 
 Durante el desarrollo se promovió la comunicación constante, el uso de metodologías ágiles y el seguimiento mediante herramientas colaborativas. Se documentaron:
